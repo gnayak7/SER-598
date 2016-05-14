@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.asu.msse.gnayak2.movieapplication.MovieDetailsActivityController">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/gridLayout">
+
+        <TextView
+            android:id="@+id/movie_details_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_row="0"
+            android:text="Title"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/movie_details_textView2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_row="0"
+            android:text=":"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/movie_details_editText_title"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_width="200dp"
+            android:layout_row="0"
+            android:background="@android:drawable/editbox_background"
+            android:hint="title"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/movie_details_textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_row="1"
+            android:text="Year"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/movie_details_textView4"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_row="1"
+            android:text=":"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/movie_details_editText_year"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:layout_width="200dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="year"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/movie_details_textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_row="2"
+            android:text="Rated"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/movie_details_textView6"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_row="2"
+            android:text=":"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/movie_details_editText_rated"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:layout_width="200dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="reated"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/movie_details_textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_row="3"
+            android:text="Released"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/movie_details_textView8"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_row="3"
+            android:text=":"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/movie_details_editText_released"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:background="@android:drawable/editbox_background"
+            android:hint="click to launch picker"
+            android:layout_width="200dp"
+            android:onClick="showDatePickerDialog"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/movie_details_textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_row="4"
+            android:text="Rumtime"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/movie_details_textView10"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_row="4"
+            android:text=":"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/movie_details_editText_runtime"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="4"
+            android:layout_width="200dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="runtime"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/movie_details_textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_row="5"
+            android:text="Genre"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/movie_details_textView12"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_row="5"
+            android:text=":"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/movie_details_editText_genre"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_width="200dp"
+            android:layout_row="5"
+            android:background="@android:drawable/editbox_background"
+            android:hint="genre"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/movie_details_textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_row="6"
+            android:text="Actors"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/movie_details_textView14"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_row="6"
+            android:text=":"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/movie_details_editText_actor"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_width="200dp"
+            android:layout_row="6"
+            android:background="@android:drawable/editbox_background"
+            android:editable="false"
+            android:hint="actors"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/movie_details_textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_row="9"
+            android:text="Plot"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/movie_details_textView16"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_row="9"
+            android:text=":"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/movie_details_editText_plot"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="9"
+            android:background="@android:drawable/editbox_background"
+            android:hint="plot"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:textSize="12dp" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onSaveClick"
+        android:text="Save"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="59dp"
+        android:layout_marginEnd="59dp"
+        android:onClick="onDelete"/>
+
+</RelativeLayout>
+
+
