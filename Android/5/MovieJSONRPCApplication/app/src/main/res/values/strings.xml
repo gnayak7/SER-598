@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MovieJSONRPCApplication</string>
+    <string name="IP_ADDRESS">http://10.0.2.2:8080</string>
+</resources>
