@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MovieApplication</string>
+    <string name="IP_ADDRESS">http://10.0.2.2:8080</string>
+    <string name="title_activity_video_streamer">VideoStreamer</string>
+    <string name="STREAM_URL">http://10.0.2.2:8888/</string>
+</resources>
